@@ -22,7 +22,16 @@
         img {
             
             margin: 0 auto;}
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+            
+            &:hover {
+                animation-play-state:paused;
+
+            }
+        }
     }
+
     &__subtitle {
         padding: 38px 0 26px 0;
         text-align: center;
@@ -39,6 +48,9 @@
     a {
         color: #ff0000;
         text-decoration: underline;
+        &:hover {
+            color: #16c7f3e3;
+        }
     }
 
 
